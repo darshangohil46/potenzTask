@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import User from "./pages/User"
 import Login from "./pages/Login"
 import Navbar from './components/Navbar';
-import Products from './components/Products';
+import Product from './components/Product';
 import axios from 'axios';
+import AllProducts from './pages/AllProducts';
 
 function App() {
   const [login, setLogin] = useState(false);
@@ -66,12 +67,23 @@ function App() {
           <Route path='/product' element={login ? (
             <>
               <Navbar />
-              <Products product={data} />
+              <AllProducts product={data} />
             </>
           ) : (
             <Login />
           )
           }></Route>
+
+          <Route path='/product-data' element={login ? (
+            <>
+              <Navbar />
+              <Product />
+            </>
+          ) : (
+            <Login />
+          )
+          }></Route>
+
 
         </Routes>
       </Router>
