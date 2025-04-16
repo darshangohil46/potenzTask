@@ -1,13 +1,44 @@
-# React + Vite
+# React + Vite App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using React and Vite to provide a fast and optimized development experience.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository
 
-## Expanding the ESLint configuration
+   ```bash
+   git clone https://github.com/darshangohil46/potenzTask.git
+   cd potenzTask
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# potenzTask
+2. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+3. Start Development Server
+   ```bash
+   npm run dev
+   ```
+
+This will start the development server and you can view the application at http://localhost:5173.
+
+4. Build for Production
+
+   ```bash
+   npm run build
+   ```
+
+5. Preview Production Build
+   ```bash
+   npm run preview
+   ```
+
+## Tech Stack
+
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool and development server for modern web projects.
+- **Axios**: A promise-based HTTP client for making API calls.
+- **React Router DOM**: A library for handling routing in React applications.
+- **Bootstrap** (optional): A CSS framework for building responsive and mobile-first websites.
